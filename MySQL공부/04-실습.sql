@@ -76,4 +76,4 @@ select
 from emp e
 inner join emp m
 on e.mgr = m.empno
-group by m.empno ;
+group by m.empno;

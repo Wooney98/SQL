@@ -80,4 +80,5 @@ select embarked,survived,
     count(distinct(cabin)) as 'cabin 고유값',
     count(distinct(ticket)) as '티켓 고유값',
     avg(if (sibsp=0 and parch=0, 1, 0)) as "가족이 없는 승객 비율"
-from titanic_raw where embarked is not null group by embarked, survived order by embarked,survived;
+from titanic_raw where embarked is not null 
+group by embarked, survived order by embarked,survived;

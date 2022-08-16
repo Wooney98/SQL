@@ -37,4 +37,4 @@ from titanic_raw where embarked = "Q" group by embarked, pclass order by pclass;
 -- 가족수가 생존율에 영향을 준다.
 -- 등급이 낮을수록 나이가 어려지고 생존율도 낮아진다.
 -- 생존자의 평균나이가 어린편이고 편차가 심하다.
--- 1등급 남자의 생존율이 25%나 된다.
+-- 1등급 남자의 생존율이 25%나 된다..

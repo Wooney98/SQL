@@ -43,12 +43,12 @@ select avg(survived) as survived_rate
 from titanic_raw
 where age < 10;
 
--- 생존자에 대한 sibsp(형제자매배우자수) 과 parch(부모자식수) 평균!
+-- 생존자에 대한 sibsp(형제자매배우자수) 과 parch(부모자식수) 평균
 select avg(sibsp) avg_sibsp , avg(parch) as avg_parch
 from titanic_raw
 where survived=1;
 
--- 사망자에 대한 sibsp(형제자매배우자수) 과 parch(부모자식수) 평균!
+-- 사망자에 대한 sibsp(형제자매배우자수) 과 parch(부모자식수) 평균
 select avg(sibsp) avg_sibsp , avg(parch) as avg_parch
 from titanic_raw
 where survived=0;
